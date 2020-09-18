@@ -1,6 +1,6 @@
 {
   "name": "@ts-monorepo-starter/bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -14,7 +14,7 @@
     "test": "yarn run build"
   },
   "dependencies": {
-    "@ts-monorepo-starter/foo": "^1.0.0"
+    "@ts-monorepo-starter/foo": "^1.0.1"
   },
   "devDependencies": {
     "rimraf": "~3.0.2",

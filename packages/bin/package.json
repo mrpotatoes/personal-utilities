@@ -1,6 +1,6 @@
 {
   "name": "@ts-monorepo-starter/bin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a TS based package in a monorepo or the monorepo itself",
   "author": "mrpotatoes <andric.droid@gmail.com>",
   "homepage": "https://github.com/mrpotatoes/ts-node-template-example#readme",
