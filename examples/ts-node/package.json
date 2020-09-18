@@ -1,5 +1,5 @@
 {
-  "name": "@nighttrax/ts-node",
+  "name": "@ts-monorepo-starter/ts-node",
   "description": "Example of using ts-node in a TS monorepo",
   "private": true,
   "version": "1.0.0",
@@ -8,6 +8,6 @@
     "test": "yarn run start"
   },
   "dependencies": {
-    "@nighttrax/foo": "*"
+    "@ts-monorepo-starter/foo": "*"
   }
 }

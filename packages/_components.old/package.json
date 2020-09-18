@@ -1,5 +1,5 @@
 {
-  "name": "@nighttrax/components",
+  "name": "@ts-monorepo-starter/components",
   "version": "1.0.0",
   "main": "dist/index",
   "types": "dist/index",
@@ -14,7 +14,7 @@
     "react": "~16.13.1"
   },
   "dependencies": {
-    "@nighttrax/foo": "*"
+    "@ts-monorepo-starter/foo": "*"
   },
   "devDependencies": {
     "@types/react": "~16.9.43"

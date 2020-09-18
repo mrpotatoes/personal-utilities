@@ -1,5 +1,5 @@
 module.exports = {
-  extends: '@nighttrax/eslint-config-tsx',
+  extends: '@ts-monorepo-starter/eslint-config-tsx',
   rules: {
     'constructor-super': 'warn',
     'no-const-assign': 'warn',

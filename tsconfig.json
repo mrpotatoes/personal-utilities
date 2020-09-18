@@ -4,7 +4,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@nighttrax/*": ["packages/**/*/src"],
       "@ts-monorepo-starter/*": ["packages/*/src"]
     },
     "jsx": "react",

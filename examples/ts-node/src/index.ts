@@ -1,4 +1,4 @@
-// import { meaningOfLife } from "@nighttrax/foo";
+// import { meaningOfLife } from "@ts-monorepo-starter/foo";
 
 import tpl from '@ts-monorepo-starter/templates'
 

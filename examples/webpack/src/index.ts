@@ -1,1 +1,1 @@
-import "@nighttrax/bar";
+import "@ts-monorepo-starter/bar";
