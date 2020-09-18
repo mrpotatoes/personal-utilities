@@ -1,0 +1,1 @@
+Might make more sense in the `generator` project instead of packaging this up and publishing. Unless, of course, I make the generator package generic enough. Which, realistically, knowing me, I'll most likely do anyway.

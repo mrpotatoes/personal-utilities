@@ -1,13 +1,14 @@
 {
-  "name": "@ts-monorepo-starter/config-cspell",
+  "name": "@ts-monorepo-starter/templates",
   "version": "1.0.0",
-  "description": "Check the spelling in your ts monorepo",
+  "description": "> TODO: description",
   "author": "mrpotatoes <andric.droid@gmail.com>",
   "homepage": "https://github.com/mrpotatoes/ts-node-template-example#readme",
-  "license": "MIT",
-  "main": "src/config-cspell.js",
+  "license": "ISC",
+  "main": "lib/templates.js",
   "directories": {
-    "lib": "src"
+    "lib": "lib",
+    "test": "__tests__"
   },
   "files": [
     "lib"

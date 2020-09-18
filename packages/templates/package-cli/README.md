@@ -1,0 +1,1 @@
+Generates a cli project
