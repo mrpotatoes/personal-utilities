@@ -1,6 +1,6 @@
 {
   "name": "@ts-monorepo-starter/generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "mrpotatoes <andric.droid@gmail.com>",
   "homepage": "https://github.com/mrpotatoes/ts-node-template-example#readme",
@@ -29,7 +29,7 @@
     "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
   },
   "dependencies": {
-    "@ts-monorepo-starter/templates": "^1.0.1",
+    "@ts-monorepo-starter/templates": "^1.0.2",
     "rimraf": "^3.0.2",
     "typescript": "^4.0.2"
   },
