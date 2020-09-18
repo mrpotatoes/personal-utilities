@@ -9,9 +9,5 @@
   },
   "dependencies": {
     "@nighttrax/foo": "*"
-  },
-  "devDependencies": {
-    "ts-node": "~8.10.2",
-    "tsconfig-paths": "~3.9.0"
   }
 }

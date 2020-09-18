@@ -5,14 +5,7 @@
   "author": "mrpotatoes <andric.droid@gmail.com>",
   "homepage": "https://github.com/mrpotatoes/ts-node-template-example#readme",
   "license": "ISC",
-  "main": "lib/templates.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "main": "indext.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrpotatoes/ts-node-template-example.git"
@@ -22,5 +15,8 @@
   },
   "bugs": {
     "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5"
   }
 }
