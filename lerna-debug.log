@@ -1,0 +1,12 @@
+0 silly argv { _: [ 'create' ], lernaVersion: '3.22.1', '$0': 'lerna', name: 'bin' }
+1 notice cli v3.22.1
+2 verbose rootPath /Users/n0319505/Projects/Outside/ts-node-template-example
+3 info versioning independent
+4 error Error: Command failed: git config --get user.name
+4 error
+4 error
+4 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
+4 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:338:15)
+4 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:26:16)
+4 error     at CreateCommand.gitConfig (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:181:34)
+4 error     at CreateCommand.initialize (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:103:46)

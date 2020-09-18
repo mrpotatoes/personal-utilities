@@ -1,0 +1,26 @@
+{
+  "name": "@ts-monorepo-starter/config-prettier",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "mrpotatoes <andric.droid@gmail.com>",
+  "homepage": "https://github.com/mrpotatoes/ts-node-template-example#readme",
+  "license": "MIT",
+  "main": "lib/config-prettier.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpotatoes/ts-node-template-example.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
+  }
+}
