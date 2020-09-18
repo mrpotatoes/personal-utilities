@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "ejs": "^3.1.5"
   }
