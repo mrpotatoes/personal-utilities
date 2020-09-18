@@ -4,3 +4,5 @@ results
 .nyc_output
 *.tsbuildinfo
 .DS_Store
+package-lock.json
+yarn.lock
