@@ -9,10 +9,10 @@
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "start:watch": "ts-node-dev --respawn tsconfig-paths/register src/index.ts",
-    "build": "yarn run clean && yarn run compile",
+    "build": "yarn clean && yarn compile",
     "clean": "rimraf -rf ./dist",
     "compile": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "yarn build",
     "test": "yarn run build"
   },
   "directories": {
@@ -29,6 +29,9 @@
     "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
   },
   "dependencies": {
-    "@ts-monorepo-starter/templates": "^1.0.1"
-  }
+    "@ts-monorepo-starter/templates": "^1.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2"
+  },
+  "gitHead": "9b00fb9f731af489169c73e3c62d059cfa23ddac"
 }

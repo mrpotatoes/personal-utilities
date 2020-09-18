@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
+import * as path from 'path'
 import ejs from 'ejs'
 
 const str = fs.readFileSync(path.join(__dirname, '/test.ejs'), 'utf8')

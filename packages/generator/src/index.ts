@@ -1,4 +1,4 @@
-import fs from 'fs'
+import * as fs from 'fs'
 
 import template from '@ts-monorepo-starter/templates'
 

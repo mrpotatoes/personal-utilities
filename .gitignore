@@ -6,3 +6,4 @@ results
 .DS_Store
 yarn.lock
 lerna-debug.log
+yarn-error.log
