@@ -1,9 +1,5 @@
 import fs from 'fs'
 
-// export * from './lib/async'
-// export * from './lib/hash'
-// export * from './lib/number'
-
 import template from '@ts-monorepo-starter/templates'
 
 const vars = {
