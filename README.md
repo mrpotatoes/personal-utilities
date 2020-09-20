@@ -27,3 +27,8 @@ To get your typescript monorepo working there is a lot of extra work. So I can g
 * `@ts-monorepo-starter/config-jest` -> Jest config options if I can abstract them into a package
 * `@ts-monorepo-starter/config-prettier` -> Prettier config options
 * `@ts-monorepo-starter/eslint` -> My eslint rules, just cleaner to have it all in here.
+
+# TODO & Questions to Answer
+- [ ] I don't think the builds are working the way that I think they should before publishing, I should look into that
+  - For example `@ts-monorepo-starter/generator` has a builds in `./dist/` but the code in only the file for that package, shouldn't it include the rest?
+- [ ] How do I export types?
