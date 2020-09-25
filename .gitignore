@@ -7,3 +7,4 @@ results
 yarn.lock
 lerna-debug.log
 yarn-error.log
+package-lock.json

@@ -18,9 +18,19 @@
     "url": "git+https://github.com/mrpotatoes/ts-node-template-example.git"
   },
   "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/bin.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn src/bin.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/mrpotatoes/ts-node-template-example/issues"
+  },
+  "dependencies": {
+    "@ts-monorepo-starter/generator": "1.0.5",
+    "chalk": "^4.1.0",
+    "inquirer": "^7.3.3",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "tsconfig-paths": "^3.9.0"
   }
 }

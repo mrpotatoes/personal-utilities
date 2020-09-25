@@ -1,0 +1,1 @@
+* Global packages aren't a thing, sorry. Gotta manage all packages within each package/ directory.
