@@ -1,5 +1,6 @@
 {
-  "name": "@ts-monorepo-starter/root",
+  "name": "@mrpotatoes/root",
+  "private": true,
   "description": "Template for setting up a TypeScript monorepo",
   "workspaces": [
     "packages/*",

@@ -1,9 +1,7 @@
-#!/usr/bin/env node
+console.clear()
 
-console.clear('')
-
-const { providers } = require('./lib/providers')
-const { open, gitRemote, providedFlags } = require('./lib/side-effects')
+import { providers } from './src/providers'
+import { gitRemote, providedFlags } from './src/side-effects'
 
 const provider = providers(gitRemote())
 
@@ -16,4 +14,4 @@ const links = provider(gitRemote(), providedFlags)
 console.log(links)
 
 // Finally open the links.
-// open(links)
+// openLinks(links)

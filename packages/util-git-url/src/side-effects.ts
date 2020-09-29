@@ -1,31 +1,28 @@
-const { execSync } = require('child_process')
-const open = require('open')
-const { tryCatch, Right, Left } = require('./utils')
+import open from 'open'
+import { execSync } from 'child_process'
+import { tryCatch, Right, Left } from './utils'
 
 const homeDir = require('os').homedir()
 const path = `${homeDir}/.git-url/providers.js`
-
-const openLink = (link) => { open(link) } 
-const openLinks = (links) => { links.forEach(openLink) }
 
 // const branch = execSync('git branch', { stdio: 'pipe' }).toString().replace('*', '').trim()
 // console.log(branch)
 
 // https://github.com/rametta/pratica#encase
-const gitCommand = cmd => () => (
+export const gitCommand = cmd => () => (
   execSync(cmd, { stdio: 'pipe' })
     .toString()
-    .split("\n")[0]
+    .split('\n')[0]
     .replace('(fetch)', '')
     .replace('origin', '')
     .trim()
 )
 
-const either = x => 'Malfunction'
-const or = x => x
+export const either = x => 'Malfunction'
+export const or = x => x
 
 // TODO: Use an Either in here to catch errors. We may not be in a git managed directory.
-const gitRemote = () => {
+export const gitRemote = () => {
   // const remoteUrl = gitCommand('git ressmote -v')
   // const whatIf = tryCatch(remoteUrl).fold(either, or)
 
@@ -45,10 +42,10 @@ const gitRemote = () => {
 }
 
 // The side-effect to get the plugins. Make this file bubbo.
-const userDefined = () => ({
+export const userDefined = () => ({
   // Can I curry a function def within an object? Let's figure this out!
   // 'git.forge.lmig.com': (provider, cleaned, flags) => {
-  //   console.log(provider);
+  //   console.log(provider)
   //   const mapping = {
   //     '--pr': 'pull-requests'
   //   }
@@ -73,9 +70,4 @@ const userDefined = () => ({
   // }
 })
 
-module.exports = {
-  gitRemote,
-  userDefined,
-  gitCommand,
-  open: openLinks,
-}
+export const providedFlags = ''

@@ -1,4 +1,4 @@
-const fs = require('fs')
+import fs from 'fs'
 
 // Simple functional utils so I don't need to pull in a big library to do this.
 // https://tinyurl.com/y34evghg
@@ -8,20 +8,20 @@ const fs = require('fs')
 const Nothing = x => ({})
 const Just = x => ({})
 
-const Right = x => ({
+export const Right = x => ({
   map: f => Right(f(x)),
   fold: (f, g) => g(x),
   inspect: () => `Right(${x})`
 })
 
-const Left = x => ({
+export const Left = x => ({
   map: f => Left(x),
   fold: (f, g) => f(x),
   inspect: () => `Left(${x})`
 })
 
 // Still learning, forgive me.
-const tryCatch = (tryFn) => {
+export const tryCatch = (tryFn) => {
   try {
     const tried = tryFn()
     return Right(tried)
@@ -55,11 +55,4 @@ const reduce = () => {}
 // In-case I need this but I could just as easily do this via [].reduce()
 const compose = () => {}
 
-const empty = (arr) => (!Boolean(arr.length))
-
-module.exports = {
-  empty,
-  Right,
-  Left,
-  tryCatch,
-}
+export const empty = (arr) => (!Boolean(arr.length))
