@@ -22,13 +22,9 @@ export const generic = provider => (gitUrl) => {
     .map(addAlias(provider))
     .map(e => baseRepoUrl(e))
 
-  // TODO: This isn't part of this function. This should def be pulled out.
+  // TODO: This isn't part of this function. This should deffo be pulled out.
   // If I turn this into a function I can map over this and E-V-E-R-Y-T-H-I-N-G.
-  // const uniqueUrls = [...new Set(flaggedLinks)]
+  const uniqueUrls = Array.from(new Set(flaggedLinks))
 
-  console.log(new Set(flaggedLinks))
-  
-  return []
-
-  // return uniqueUrls
+  return uniqueUrls
 }

@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "ts-node -r tsconfig-paths/register index.ts",
-    "dev2": "ts-node-dev --respawn -r tsconfig-paths/register index.ts",
+    "dev:watch": "ts-node-dev --respawn -r tsconfig-paths/register index.ts",
     "test": "yarn run start"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
   "dependencies": {
     "chai": "^4.2.0",
     "crocks": "^0.12.3",
+    "fp-ts": "^2.8.3",
     "js-yaml": "^3.13.1",
     "mocha": "^6.2.0",
     "open": "^6.4.0",

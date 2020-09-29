@@ -23,7 +23,7 @@ export const addAlias = providerHost => e => (
 // TODO: Are these worth currying or are they fine as is?
 export const aliases = mappings.providers['github.com'].aliases
 export const allFlags = [...mappings.flags, ...Object.keys(aliases)]
-export const allowedFlags = []//[...new Set(allFlags)]
+export const allowedFlags = Array.from(new Set(allFlags))
 
 // This should be in a monad so that we can test this easier. It's also a side effect.
 export const providedFlags = () => process.argv.slice(2, process.argv.length)
