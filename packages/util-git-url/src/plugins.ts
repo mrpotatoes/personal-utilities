@@ -5,14 +5,16 @@ import { repoUrl } from './paths'
 import { providedFlags, addAlias, flags } from './flags'
 
 // A generic way to handle plugins
-export const generic = provider => (gitUrl) => {
+export const generic = provider => (gitUrl: string, userProvidedFlags: string[]) => {
+  console.log('userProvidedFlags', userProvidedFlags)
+
   const baseRepoUrl = repoUrl(gitUrl)
   const links = [baseRepoUrl('')]
 
   // Railroad program this: https://blog.logrocket.com/elegant-error-handling-with-the-javascript-either-monad-76c7ae4924a1/
   // If no link then default to the default url.
   if (empty(providedFlags())) {
-    return links
+    // return links
   }
 
   // Railroad program this: https://blog.logrocket.com/elegant-error-handling-with-the-javascript-either-monad-76c7ae4924a1/

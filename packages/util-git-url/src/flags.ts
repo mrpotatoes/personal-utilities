@@ -26,7 +26,7 @@ export const allFlags = [...mappings.flags, ...Object.keys(aliases)]
 export const allowedFlags = Array.from(new Set(allFlags))
 
 // This should be in a monad so that we can test this easier. It's also a side effect.
-export const providedFlags = () => process.argv.slice(2, process.argv.length)
+export const providedFlags = () => ['pr', 'commits', 'rel'] //process.argv.slice(2, process.argv.length)
 
 // TODO: Curry this function.
 // Remove the user -- stuff to clean it up.
