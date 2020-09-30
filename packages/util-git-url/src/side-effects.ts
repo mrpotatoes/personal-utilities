@@ -9,7 +9,7 @@ const path = `${homeDir}/.git-url/providers.js`
 // console.log(branch)
 
 // https://github.com/rametta/pratica#encase
-export const gitCommand = cmd => () => (
+export const gitCommand = (cmd: string) => () => (
   execSync(cmd, { stdio: 'pipe' })
     .toString()
     .split('\n')[0]
@@ -22,7 +22,7 @@ export const either = x => 'Malfunction'
 export const or = x => x
 
 // TODO: Use an Either in here to catch errors. We may not be in a git managed directory.
-export const gitRemote = () => {
+export const gitRemote = (): string => {
   // const remoteUrl = gitCommand('git ressmote -v')
   // const whatIf = tryCatch(remoteUrl).fold(either, or)
 

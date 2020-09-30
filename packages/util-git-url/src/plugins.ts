@@ -5,7 +5,7 @@ import { repoUrl } from './paths'
 import { providedFlags, addAlias, flags } from './flags'
 
 // A generic way to handle plugins
-export const generic = provider => (gitUrl: string, userProvidedFlags: string[]) => {
+export const generic = (provider: string) => (gitUrl: string, userProvidedFlags: string[]): string[] => {
   console.log('userProvidedFlags', userProvidedFlags)
 
   const baseRepoUrl = repoUrl(gitUrl)

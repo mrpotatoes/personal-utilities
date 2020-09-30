@@ -3,10 +3,10 @@
 import url from 'url'
 
 // Get the provider host from the full git remote url.
-export const providerHost = gitUrl => (url.parse(gitUrl).host)
+export const providerHost = (gitUrl: string): string => (url.parse(gitUrl).host)
 
 // This will require some providerHost masaging.
-export const segments = gitUrl => (
+export const segments = (gitUrl: string): string[] => (
   url
     .parse(gitUrl.replace('.git', '')) // Build a parsed url object.
     .path // Get the path property.
@@ -14,7 +14,7 @@ export const segments = gitUrl => (
     .split('/') // Turn into array.
 )
 
-export const baseUrl = gitUrl => {
+export const baseUrl = (gitUrl: string): string => {
   const pathParts = segments(gitUrl)
   const base = `${url.parse(gitUrl).host}/${pathParts.join('/')}`
   const repoUrl = `https://${base}`
@@ -22,4 +22,4 @@ export const baseUrl = gitUrl => {
   return repoUrl
 }
 
-export const repoUrl = gitUrl => path => `${baseUrl(gitUrl)}/${path}`
+export const repoUrl = (gitUrl: string) => (path: string): string => `${baseUrl(gitUrl)}/${path}`

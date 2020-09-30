@@ -3,6 +3,7 @@
 import { generic } from './plugins'
 import { userDefined } from './side-effects'
 import { providerHost } from './paths'
+import { Provider } from './types'
 
 // const url = require('url')
 // const plugins = require('./plugins')
@@ -10,7 +11,7 @@ import { providerHost } from './paths'
 // const { providerHost } = require('./paths')
 
 // Should be at the very least urnary.
-const knownProviders = () => ({
+const knownProviders = (): Provider => ({
   'github.com': generic,
   'gitlab.com': generic,
   'bitbucket.org': generic,

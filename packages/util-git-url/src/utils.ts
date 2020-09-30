@@ -8,12 +8,14 @@ import fs from 'fs'
 const Nothing = x => ({})
 const Just = x => ({})
 
+// TODO: Delete me and use fp-ts instead
 export const Right = x => ({
   map: f => Right(f(x)),
   fold: (f, g) => g(x),
   inspect: () => `Right(${x})`
 })
 
+// TODO: Delete me and use fp-ts instead
 export const Left = x => ({
   map: f => Left(x),
   fold: (f, g) => f(x),
@@ -43,16 +45,7 @@ const userPlugins = (path) => {
 // const or = () => { require(path).plugins } // This would be how we get the plugin safely.
 // .fold(either, or)
 
-// Not a thing but I want it to be.
+// TODO: Delete me and use fp-ts instead
 const Either = () => {}
-
-// So that I can use the array methods not directly on an array making 
-// this a bit easier to visually compose
-const map = () => {}
-const filter = () => {}
-const reduce = () => {}
-
-// In-case I need this but I could just as easily do this via [].reduce()
-const compose = () => {}
 
 export const empty = (arr) => (!Boolean(arr.length))
